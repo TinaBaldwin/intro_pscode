@@ -2,3 +2,99 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+
+
+To find the exit in a large warehouse in which the customer can move north, south, east or west
+
+There are obstacles in the warehouse around which the customer has to negotiate
+
+
+The warehouse is represented as a 2 dimensional grid and movements are completed in single steps in a direction on the x, y axis (north, south, east, west) 
+	North (x, y+1) - moves up on the grid
+	South (x, y-1) - moves down on the grid
+	East (x+1, y) - moves right on the grid
+	West (x-1, y) - moves left on the grid
+
+
+The exit is at coordinates (4, 2)
+
+Start (is a variable) is the position where the customer starts from in the warehouse
+
+Visited (is a variable) will track positions in the warehouse where the customer has already been 
+	visited coordinates are stored so that it's known where the customer has already been 
+
+while the current position coordinates are not equal to the coordinates of the exit 
+	the customer will move one step in a direction and update the current position coordinates 
+		unless the step is blocked or 
+		is a visited location or 
+	this movement one step at a time will continue until the customer has located the exit
+		if no steps are available to be taken, once the customer reaches a position, 
+			the customer will return to the position from where they came and take a 			different directional step
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The warehouse is setup in a grid with six zones that are labeled with letters
+
+Zones A, D, E, H are all aisles at either the front of back of the store
+
+The zones are located in alphabetical order in the store, two zones deep and three zones wide, going south to north and then west to east 
+
+Items are organized by chronological numbers
+
+An individual item can be located by the zone letter and a number
+
+Each zone is separated by a 36" aisle to provide separation between zones
+
+All customers start at the entrance which is by zone A and item number 0
+
+Item number zero is the space in front of each zone that can be traversed by customers in a west to east movement
+
+
+
+Program pseudocode:
+The application has a title page introducing what is sold in the store
+
+The title page has a text box into which the customer may enter the item they desire to locate
+
+Computer searches zone/items array for the desired item
+
+If the computer doesn't find the desired item in the array a message will be displayed stating that item is not available, enter a different item.
+
+	This step repeats until an item is entered that is located in the zone/item array
+
+
+Once the computer finds an item in the zone/item array it's location is mapped and directions to the items are displayed
+
+The directions to the items are displayed in steps in chunks
+	each set of chunks moves one direction (either north, south, east, west)
+		once the customer has successfully moved the correct direction in a chunk the next chunk will display
+
+
