@@ -2,3 +2,20 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Set a variable called Packages to zero
+
+Create an constant called Scan = 2 for (for the number of items that a hardware devices scans)
+
+While packages is <= 49 do the following
+
+	Packages = packages + scan
+
+	Print packages
+
+Once packages is > 49 the above loop stops
+
+
+
+
+
+
