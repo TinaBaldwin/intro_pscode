@@ -23,6 +23,7 @@ These below directions will repeat a maximum of three times or until the player 
 		If player inputs a string then display, "try again, please enter a whole number"
 
 		If player inputs special characters and not an integer then display "try again, please enter a whole number" 
+		If player inputs nothing and hits enter then display "try again, please enter a whole number"
  
 		If player inputs an integer that is not >0 and <= 10 then display "try again, please enter a whole number between 1 and 10"
 
@@ -33,7 +34,7 @@ These below directions will repeat a maximum of three times or until the player 
 
 
 End game directions
-	If Num is not guessed correctly in three tries, then display "Good try!"
+	If Num is not guessed correctly in three tries, then display "Good try! The number was" Num "."
 	
 	display two choice buttons
 		one button is for quit game
